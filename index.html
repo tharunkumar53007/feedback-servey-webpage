@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Servey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Feedback Survey Form</h1>
+
+        <form>
+            <label for="">Name:</label>
+            <input type="text" name="username" required="" id="name" placeholder="Enter Your Name">
+
+            <label for="usermail">Email:</label>
+            <input type="text" name="usermail" id="mail" placeholder="Enter Your Email"> 
+
+            <label for="userage">Age:</label>
+            <input type="number" min="1" max="120" name="userage" id="age" placeholder="Enter Your Age">
+
+            <label for="userfeedback">Types of Feedback:</label>
+            <select name="userfeedback" id="feedback">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="Suggestions" >Suggestions</option>
+            </select>
+
+            <fieldset>
+                <legend>Services Used:</legend>
+                <input type="checkbox" name="tickbox">
+                <label for="tickbox">Service 1</label>
+                <br>
+
+                <input type="checkbox" name="tickbox">
+                <label for="tickbox">Service 2</label>
+                <br>
+
+
+                <input type="checkbox" name="tickbox">
+                <label for="tickbox">Service 3</label>
+            </fieldset>
+
+            <label for="usertext">Additional Comments:</label>
+            <textarea name="usertext" rows="4" id="usertext" placeholder="Enter Additional Comments Here"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
